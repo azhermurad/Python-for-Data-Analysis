@@ -65,3 +65,26 @@ Pandas is a data manipulation and analysis library built on top of NumPy. It pro
 
   series = pd.Series([1, 2, 3, 4])
 
+
+### `docs/example-use-cases.md`
+
+
+# Example Use Cases
+
+## Example 1: Basic Data Analysis
+
+```python
+import numpy as np
+import pandas as pd
+
+# Create a DataFrame
+data = {'A': np.random.randint(1, 100, 10),
+        'B': np.random.rand(10)}
+df = pd.DataFrame(data)
+
+# Basic statistics
+print(df.describe())
+
+# Correlation matrix
+print(df.corr())
+
